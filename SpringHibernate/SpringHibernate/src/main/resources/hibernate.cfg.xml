@@ -9,7 +9,7 @@
         </property>
 
         <property name = "hibernate.connection.driver_class">
-            com.mysql.jdbc.Driver
+            com.mysql.cj.jdbc.Driver
         </property>
 
         <!-- Assume springboothibernateintegration is the database name -->
@@ -26,7 +26,7 @@
             root
         </property>
         <property name = "hibernate.hbm2ddl.auto">
-            update
+            create
         </property>
         <property name = "hibernate.show_sql">
             true

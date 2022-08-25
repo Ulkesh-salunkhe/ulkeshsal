@@ -14,6 +14,12 @@ public class CustomerController {
     @Autowired
     CustomerService customerService;
 
+    @GetMapping("/hello")
+    public String sayHello(){
+
+        return "Welcome To Fintech CSI Pune";
+    }
+
     @PostMapping("/savebulkdata")
     public String bigdata(@RequestBody List<Customer> customer){
 
